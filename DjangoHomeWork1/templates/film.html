@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Film</title>
+</head>
+<body>
+    {% for i in object_list %}
+        <a href="/film/{{ i.id }}/"><h2>{{ i.title }}</h2></a>
+        <img src="{{ i.image }}" alt="">
+    {% endfor %}
+</body>
+</html>
