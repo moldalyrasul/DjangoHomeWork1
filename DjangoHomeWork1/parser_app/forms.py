@@ -6,7 +6,7 @@ class ParserForm(forms.Form):
     MEDIA_CHOICE = (
         ('FILM', 'FILM'),
         ('SERIAL', 'SERIAL'),
-        ('ANIME','ANIME')
+        ('ANIME', 'ANIME')
     )
 
     media_type = forms.ChoiceField(choices=MEDIA_CHOICE)
